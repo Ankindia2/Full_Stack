@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>University Registyration Form</h1>
+        <h4>Please fill out the form below to register.</h4>
+    </header>
+    <hr>
+    <main>
+        <h2>Personal Details</h2>
+
+        <form>
+            <label for="First name">First Name:</label>
+            <input type="text" name="userfirstname" id="first name" placeholder="e.g:Arjun" required>
+
+            <br><br>
+
+            <label for="last name">Last Name:</label>
+            <input type="text" name="userlastname" id="last name" placeholder="eg:samrat">
+
+            <br><br>
+
+            <label for="date of birth">Date of Birth:</label>
+            <input type="date" name="DOB" id="dob">
+
+            <br><br>
+
+            <h4>Gender:</h4>
+
+             <label for="male">male</label>
+             <input type="radio" name="gender" id="male" value="male">
+
+             <br>
+
+             <label for="female">female</label>
+             <input type="radio" name="gender" id="female" value="female">
+
+             <br>
+
+             <label for="other">other</label>
+             <input type="radio" name="gender" id="other" value="other">
+             <br>
+
+             <h3>Upload Your File</h3>
+             <br>
+             <input type="file" name="file">
+
+       
+
+        <hr>
+      
+            <h2>Contact information</h2>
+            <label>Email Address:</label>
+            <input type="text"name= "email" placeholder="e.g:samratankit55@gmail.com" id="email">
+            <br>
+            <label>Phone Number:</label>
+            <input type="number" name="phone" placeholder="e.g:9862867182" id="phone number">
+            <br>
+            <label>Mailing Address:</label>
+            <br>
+            <textarea name="Address" id="Address" rows="5" cols="20"></textarea>
+
+            <hr>
+            <h3>Academic Information</h3>
+
+            <label for="course">Select Your Course:</label>
+            <select name="course" id="course">
+
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+
+            </select>
+            <br>
+            <h3>Extracariculam Activity:</h3>
+
+            <label for="extra">Sports</label>
+            <input type="checkbox" name="extra" id="extra" value="sports">
+            <br><br>
+
+            <label for="song">Musics &Arts</label>
+            <input type="checkbox" name="extra" id="song" value="Musics & Arts">
+            <br><br>
+
+            <label for="club">Technology Clubs</label>
+            <input type="checkbox" name="extra" id="club" value="Technology Club">
+            <br><br>
+
+            <label for="organiser">Volunteering</label>
+            <input type="checkbox" name="extra" id="organiser" value="Volunteering">
+            <br><br>
+
+
+            <hr>
+            <h3>Create Your Account</h3>
+            <label for="password"> Create a Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <label>Security answer:</label>
+            <input type="text">
+
+            <hr>
+
+            <button type="Submit">Register</button>
+            <button type="reset">Clear Form</button>
+
+
+
+         </form>
+      
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+</html>
