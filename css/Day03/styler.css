@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+h1{
+    background-color: rgb(234, 6, 6);
+    position:relative;
+    left:00px;
+    /* top,right */
+}
+
+h3{
+    background-color: rgb(117, 117, 223);
+    position:fixed;top:0;
+    left:300px;
+}
+/* stick */
+h2{
+    background-color: bisque;
+    position:sticky;
+    top:10;
+}
+p{
+    background-color: rgb(87, 84, 82);
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}

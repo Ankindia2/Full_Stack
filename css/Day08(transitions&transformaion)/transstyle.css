@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: greenyellow;
+}
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     perspective: 800px;
+    
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    cursor: pointer;
+    transition-property:all;
+    transition-duration: 2s;
+    transform: translate(200px 300px);
+    /* transform: skew(20deg); */
+    
+   
+    /* transition: all 3s case-in 2s; */
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+/* .box:hover{
+     background-color: greenyellow;
+    height: 250px;
+    width: 350px; 
+    transform: scale(2); 
+    transform: translateZ('200px');
+    transform: rotateX('20deg');
+    
+}  */
+
+@keyframes moving{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

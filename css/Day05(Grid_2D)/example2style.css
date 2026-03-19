@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:purple ;
+}
+.container{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    background-color: bisque;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap:5px;
+    padding: 10px;
+}
+.first{
+    background-color: green;
+    grid-row:1/4;
+}
+.second{
+    background-color: green;
+    grid-column:2/4;
+}
+.sixth{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.box{
+    background-color: brown;
+}

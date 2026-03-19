@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    background-color: beige;
+}
+
+@media screen and (max-width:600px)
+{
+    .container{
+        height: 300px;
+        width: 300px;
+        font-size: 30px;
+        background-color: bisque;
+
+    } 
+}
+
+@media screen and (min-width:800px) {
+    .container{
+        background-color: blueviolet;
+        font-size: 60px;
+    }
+    
+}

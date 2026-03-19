@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.742);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container{
+    background-color: bisque;
+    border: 3px solid blueviolet;
+    font-size: 40px;
+    padding: 10px;
+    color:rgb(87, 87, 180);
+    width: 70%;
+    border-radius: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+p{
+    margin-left: 100%;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes moving {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: -110%;
+    }
+}

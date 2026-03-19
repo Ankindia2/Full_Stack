@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: greenyellow;
+}
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    cursor: pointer;
+    transition-property:all;
+    transition-duration: 2s;
+    /* transition: all 3s case-in 2s; */
+
+}
+.box:hover{
+    background-color: greenyellow;
+}

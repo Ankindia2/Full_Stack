@@ -1,0 +1,37 @@
+span{
+    color: red;
+}
+*{/* universal select*/
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    background-color: mediumseagreen;
+    height:80px;
+    width:150px;
+    padding: 40px;
+    margin:30px;
+    box-sizing: content-box;
+}
+h2{
+    background-color: rgb(149, 33, 33) ;
+    display:inline-block;
+    height:75px;
+    width:130px;
+    border:10px solid black;
+    padding:20px;
+    /* box-sizing: border-box; */
+}
+
+span{
+    background-color: yellow;
+    height:60px;
+    width:150px;
+    margin-bottom:65px;
+    padding-left: 30px;
+    padding-right: 35px;
+    margin-left: 20px;
+    display:block;
+    display:inline-block;
+}
