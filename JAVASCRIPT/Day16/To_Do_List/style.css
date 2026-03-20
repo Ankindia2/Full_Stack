@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #000000);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #00ffd5;
+  text-shadow: 0 0 15px rgba(0, 255, 213, 0.6);
+}
+
+/* Form */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.25);
+  border: 1px solid rgba(0, 255, 213, 0.3);
+  margin-bottom: 30px;
+}
+
+/* Input */
+form input {
+  width: 280px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 213, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-color: #00ffd5;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.6);
+}
+
+/* Add Button */
+form button {
+  height: 40px;
+  padding: 0 18px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00ffd5, #00aaff);
+  color: #021b24;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.5);
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.9);
+}
+
+/* Task List */
+#allTask {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each Task Row */
+#allTask > div {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.2);
+  border: 1px solid rgba(0, 255, 213, 0.25);
+  transition: 0.3s;
+}
+
+#allTask > div:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.4);
+}
+
+/* Task Text */
+#allTask span {
+  flex: 1;
+  font-size: 15px;
+  color: #e8fffb;
+  word-break: break-word;
+}
+
+/* Buttons (Done & Delete) */
+#allTask button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+/* Done Button */
+#allTask button:nth-child(2) {
+  background: linear-gradient(135deg, #00ff9c, #00cc66);
+  color: #003320;
+  box-shadow: 0 0 10px rgba(0, 255, 156, 0.5);
+}
+
+#allTask button:nth-child(2):hover {
+  box-shadow: 0 0 18px rgba(0, 255, 156, 0.9);
+}
+
+/* Delete Button */
+#allTask button:nth-child(3) {
+  background: linear-gradient(135deg, #ff4d4d, #cc0000);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+#allTask button:nth-child(3):hover {
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.9);
+}
+
+/* Done Task Look */
+.done {
+  text-decoration: line-through;
+  color: #888 !important;
+  opacity: 0.7;
+}

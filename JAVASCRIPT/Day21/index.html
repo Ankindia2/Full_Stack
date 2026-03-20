@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prototype & Class with Examples</title>
+</head>
+<body>
+
+<h1>JavaScript Prototype & Class (With Code Examples)</h1>
+
+<hr>
+
+<h2>1. Prototype Example (Constructor Function)</h2>
+<ul>
+  <li>JavaScript prototype-based language hai</li>
+  <li>Methods prototype me add karne se memory save hoti hai</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Student.prototype.greet = function () {
+  return "Hello " + this.name;
+};
+
+const s1 = new Student("Ankit", 20);
+const s2 = new Student("Rahul", 21);
+
+console.log(s1.greet());
+console.log(s2.greet());
+</pre>
+
+<p><b>Output:</b></p>
+<pre>
+Hello Ankit
+Hello Rahul
+</pre>
+
+<hr>
+
+<h2>2. Prototype Chain Example</h2>
+<ul>
+  <li>Property object me nahi mile to prototype me search hota hai</li>
+  <li>Ye process prototype chain kehlata hai</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+const obj = {
+  name: "Ankit"
+};
+
+console.log(obj.toString());
+</pre>
+
+<p><b>Explanation:</b></p>
+<ul>
+  <li><code>toString()</code> obj me nahi hai</li>
+  <li>JavaScript ne Object.prototype me search kiya</li>
+</ul>
+
+<hr>
+
+<h2>3. __proto__ vs prototype</h2>
+<ul>
+  <li><code>prototype</code> constructor function ka hota hai</li>
+  <li><code>__proto__</code> object ka reference hota hai</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+function Person(name) {
+  this.name = name;
+}
+
+const p1 = new Person("Ankit");
+
+console.log(p1.__proto__ === Person.prototype);
+</pre>
+
+<p><b>Output:</b></p>
+<pre>true</pre>
+
+<hr>
+
+<h2>4. Class Example (ES6)</h2>
+<ul>
+  <li>Class ES6 feature hai</li>
+  <li>Class sirf syntax sugar hai</li>
+  <li>Internally prototype hi use hota hai</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    return "Hello " + this.name;
+  }
+}
+
+const s3 = new Student("Ankit", 20);
+console.log(s3.greet());
+</pre>
+
+<p><b>Output:</b></p>
+<pre>Hello Ankit</pre>
+
+<hr>
+
+<h2>5. Inheritance using Prototype</h2>
+<ul>
+  <li>Old JavaScript me inheritance prototype se hoti thi</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHello = function () {
+  return "Hello " + this.name;
+};
+
+function Student(name, roll) {
+  Person.call(this, name);
+  this.roll = roll;
+}
+
+Student.prototype = Object.create(Person.prototype);
+
+const st1 = new Student("Ankit", 101);
+console.log(st1.sayHello());
+</pre>
+
+<p><b>Output:</b></p>
+<pre>Hello Ankit</pre>
+
+<hr>
+
+<h2>6. Inheritance using Class</h2>
+<ul>
+  <li><code>extends</code> keyword use hota hai</li>
+  <li><code>super()</code> parent constructor call karta hai</li>
+</ul>
+
+<h3>Code:</h3>
+<pre>
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    return "Hello " + this.name;
+  }
+}
+
+class Student extends Person {
+  constructor(name, roll) {
+    super(name);
+    this.roll = roll;
+  }
+}
+
+const st2 = new Student("Ankit", 102);
+console.log(st2.greet());
+</pre>
+
+<p><b>Output:</b></p>
+<pre>Hello Ankit</pre>
+
+<hr>
+
+<h2>7. Key Interview Points</h2>
+<ul>
+  <li>JavaScript prototype-based language hai</li>
+  <li>Class sirf syntactic sugar hai</li>
+  <li>Inheritance prototype chain se hoti hai</li>
+  <li>Prototype methods shared hote hain</li>
+</ul>
+
+<h2>8. One-Line Definition</h2>
+<p>
+  <b>Prototype is a mechanism in JavaScript that allows objects to inherit properties from other objects.</b>
+</p>
+
+</body>
+</html>

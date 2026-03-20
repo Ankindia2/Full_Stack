@@ -1,0 +1,110 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Card */
+.container {
+  background: linear-gradient(135deg, #1a0f2e, #2c0a24);
+  padding: 35px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 
+    0 0 25px rgba(9, 169, 121, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(9, 169, 121, 0.3);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #00ffb3;
+  text-shadow: 0 0 10px rgba(0, 255, 179, 0.6);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #9ff5d9;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 179, 0.4);
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #00ffb3;
+  box-shadow: 0 0 10px rgba(0, 255, 179, 0.6);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Submit Button */
+input[type="submit"] {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00ffb3, #09a979);
+  color: #0b1f1a;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 179, 0.5);
+}
+
+/* Button Hover */
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 255, 179, 0.9);
+  background: linear-gradient(135deg, #09a979, #00ffb3);
+}
+
+/* Result Box */
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 179, 0.3);
+  color: #eafff8;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: inset 0 0 10px rgba(0, 255, 179, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .container h1 {
+    font-size: 22px;
+  }
+}

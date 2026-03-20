@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Execution Model Notes</title>
+</head>
+<body>
+
+<h2>1. JavaScript Execution Model</h2>
+<ul>
+  <li>JavaScript ka code kaise execute hota hai</li>
+  <li>Single-threaded + synchronous language</li>
+  <li>Event Loop async behavior handle karta hai</li>
+</ul>
+
+<h2>2. Single-Threaded JavaScript</h2>
+<ul>
+  <li>JavaScript ke paas sirf ek Call Stack hota hai</li>
+  <li>Ek time pe sirf ek task execute hota hai</li>
+  <li>Isliye ise single-threaded kehte hain</li>
+</ul>
+
+<h2>3. Call Stack</h2>
+<ul>
+  <li>Function execution track karta hai</li>
+  <li>LIFO (Last In First Out) follow karta hai</li>
+  <li>Synchronous code yahin execute hota hai</li>
+</ul>
+
+<h2>4. Synchronous Execution</h2>
+<ul>
+  <li>Code line by line execute hota hai</li>
+  <li>Next line tab chalegi jab current complete ho</li>
+  <li>Heavy loop page ko block kar deta hai</li>
+</ul>
+
+<h2>5. Asynchronous JavaScript</h2>
+<ul>
+  <li>Time lene wale kaam async hote hain</li>
+  <li>UI block hone se bachta hai</li>
+  <li>Examples: setTimeout, fetch, events</li>
+</ul>
+
+<h2>6. Web APIs</h2>
+<ul>
+  <li>Browser provide karta hai</li>
+  <li>setTimeout, DOM events, HTTP requests</li>
+  <li>JavaScript engine se bahar kaam hota hai</li>
+</ul>
+
+<h2>7. Task Queues</h2>
+<ul>
+  <li>Async callbacks yahan wait karte hain</li>
+  <li>Event loop yahin se tasks uthata hai</li>
+</ul>
+
+<h3>Microtask Queue</h3>
+<ul>
+  <li>High priority queue</li>
+  <li>Promises (.then, .catch)</li>
+  <li>Macrotask se pehle execute hoti hai</li>
+</ul>
+
+<h3>Macrotask Queue</h3>
+<ul>
+  <li>Low priority queue</li>
+  <li>setTimeout, setInterval</li>
+  <li>Microtask ke baad execute hoti hai</li>
+</ul>
+
+<h2>8. Event Loop</h2>
+<ul>
+  <li>Call stack ko continuously check karta hai</li>
+  <li>Agar stack empty ho to queue se task uthata hai</li>
+  <li>Execution order manage karta hai</li>
+</ul>
+
+<h2>9. Execution Order Rule</h2>
+<ul>
+  <li>Pehle synchronous code</li>
+  <li>Phir microtask queue</li>
+  <li>Uske baad macrotask queue</li>
+</ul>
+
+<h2>10. Important Interview Points</h2>
+<ul>
+  <li>JavaScript single-threaded hai</li>
+  <li>Async behavior Web APIs ki wajah se possible hai</li>
+  <li>Event Loop execution order control karta hai</li>
+</ul>
+
+</body>
+</html>

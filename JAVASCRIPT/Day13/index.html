@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Main Notes</title>
+</head>
+<body>
+
+<h2>1. DOM Kya Hai?</h2>
+<ul>
+  <li>DOM = Document Object Model</li>
+  <li>HTML ko JavaScript objects me convert karta hai</li>
+  <li>Page ko dynamic banata hai</li>
+  <li>Tree structure me hota hai</li>
+</ul>
+
+<h2>2. window vs document</h2>
+<ul>
+  <li>window = Browser</li>
+  <li>document = Web page (HTML)</li>
+  <li>document → window ke andar hota hai</li>
+</ul>
+
+<h2>3. Element Select Karna</h2>
+
+<h3>Old Methods</h3>
+<ul>
+  <li>getElementById()</li>
+  <li>getElementsByClassName()</li>
+  <li>getElementsByTagName()</li>
+</ul>
+
+<h3>Modern (Best)</h3>
+<ul>
+  <li>querySelector() → first match</li>
+  <li>querySelectorAll() → all matches</li>
+</ul>
+
+<h2>4. DOM Traversing</h2>
+<ul>
+  <li>Parent → parentElement</li>
+  <li>Children → children</li>
+  <li>Next → nextElementSibling</li>
+  <li>Previous → previousElementSibling</li>
+</ul>
+
+<h2>5. Content Change</h2>
+<ul>
+  <li>innerHTML → HTML bhi daal sakte (❌ Unsafe)</li>
+  <li>textContent → Sirf text (✅ Safe)</li>
+  <li>innerText → CSS depend karta (Slow)</li>
+</ul>
+<p><b>👉 BEST: textContent</b></p>
+
+<h2>6. XSS Attack</h2>
+<ul>
+  <li>innerHTML se hacker JS inject kar sakta</li>
+  <li>Security risk</li>
+  <li>Solution → textContent use karo</li>
+</ul>
+
+<h2>7. Attributes</h2>
+<ul>
+  <li>getAttribute()</li>
+  <li>setAttribute()</li>
+  <li>id</li>
+  <li>className</li>
+</ul>
+
+<h2>8. classList (IMPORTANT)</h2>
+<ul>
+  <li>classList.add()</li>
+  <li>classList.remove()</li>
+  <li>classList.toggle()</li>
+</ul>
+<p><b>👉 CSS handle karne ka BEST way</b></p>
+
+<h2>9. Inline Style</h2>
+<ul>
+  <li>element.style.color = "red"</li>
+  <li>Small changes ke liye</li>
+  <li>Large styling ke liye ❌ (CSS + class better)</li>
+</ul>
+
+<h2>10. Create Element</h2>
+<ul>
+  <li>document.createElement()</li>
+</ul>
+
+<h2>11. Add Element</h2>
+<ul>
+  <li>append()</li>
+  <li>prepend()</li>
+  <li>appendChild() (old)</li>
+</ul>
+
+<h2>12. Remove Element</h2>
+<ul>
+  <li>element.remove()</li>
+</ul>
+
+<h2>13. DocumentFragment (Performance)</h2>
+<ul>
+  <li>Multiple elements fast add karne ke liye</li>
+  <li>Reflow kam hota hai</li>
+  <li>Page fast rehta hai</li>
+</ul>
+
+<h2>14. Reflow & Repaint</h2>
+<ul>
+  <li>Reflow = Layout recalc (Heavy)</li>
+  <li>Repaint = Color/visual redraw</li>
+  <li>Zyada DOM changes = Slow website</li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+

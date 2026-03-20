@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="head">
+        <button id="filter">filter</button>
+         <button id="offers">Offers</button>
+          <button id="rating">Rating</button>
+           <button id="alcohol">Alcohol</button>
+            <button id="open">Open</button>
+    </div>
+
+    <!-- filter optipon popup -->
+     <div id="filteroption" class="hidden">
+        <h3>Choose filter</h3>
+        <div class="filteroption">
+            <input type="radio" id="sortBYRating" name="filteroption" value="rating">
+            <label for="sortByRating">Sort by rating</label>
+        </div>
+
+        <div class="filteroption">
+            <input type="radio" id="sortHighToLow" name="filteroption" value="highLow">
+            <label for="sortHighToLow">High To Low(price)</label>
+        </div>
+
+        <div class="filteroption">
+            <input type="radio" id="costOption" name="filteroption" value="costLowHigh">
+            <label for="costOption">Cost: Low to High</label>
+        </div>
+
+        <div class="filteroption">
+            <input type="radio" id="distanceOption" name="filteroption" value="distance">
+            <label for="distanceOption">Distance</label>
+        </div>
+
+        <button id="applyFiler">Apply</button>
+        <button id="closeFilter">Close</button>
+
+        
+
+        
+
+     </div>
+
+    <div id="root"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
