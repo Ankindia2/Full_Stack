@@ -1,0 +1,139 @@
+/* ===== Global Reset ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #fafbfc;
+}
+
+/* ===== Header ===== */
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.images {
+  cursor: pointer;
+}
+
+/* Navigation */
+
+.option {
+  display: flex;
+  gap: 18px;
+}
+
+.but {
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 6px 8px;
+  transition: 0.2s;
+}
+
+.but:hover {
+  color: #ff3f6c;
+}
+
+/* Search */
+
+input {
+  width: 320px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f5f5f6;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff3f6c;
+}
+
+/* Profile Buttons */
+
+.profile {
+  display: flex;
+  gap: 12px;
+}
+
+.profile button {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.profile button:hover {
+  color: #ff3f6c;
+}
+
+/* ===== Cards Layout ===== */
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.25s ease;
+  cursor: pointer;
+  width: 220px;
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.card h3 {
+  color: #ff3f6c;
+  margin: 8px 0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Product Grid Container */
+
+div[style] {
+  padding: 30px;
+  justify-content: center;
+}
+
+/* ===== Footer ===== */
+
+img:last-child {
+  margin-top: 40px;
+  border-top: 2px solid #eee;
+}
+
+button{
+  background-color: rgb(73, 54, 210);
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
