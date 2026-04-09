@@ -1,0 +1,40 @@
+/* Background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  padding: 50px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* List in one row */
+.list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Each item (INLINE) */
+.add-box {
+  display: flex;              /* IMPORTANT */
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Vote button */
+.add-box button {
+  padding: 8px 12px;
+  border: 1px solid #999;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.add-box button:hover {
+  background: #d5d5d5;
+}
