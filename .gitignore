@@ -66,8 +66,12 @@ REACT/Day17/dist
 REACT/Day17/node_modules
 REACT/Day17/package-lock.json
 REACT/Day17/package.json
-REACT\Day18\.parcel-cache
-REACT\Day18\dist
-REACT\Day18\node_modules
-REACT\Day18\package-lock.json
-REACT\Day18\package.json
+REACT/Day18/.parcel-cache
+REACT/Day18/dist
+REACT/Day18/node_modules
+REACT/Day18/package-lock.json
+REACT/Day18/package.json
+REACT/Day19/.parcel-cache
+REACT/Day19/node_modules
+REACT/Day19/package-lock.json
+REACT/Day19/package.json
